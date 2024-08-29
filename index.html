@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- FONTE CORPO !-->
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&family=RocknRoll+One&display=swap" rel="stylesheet">
+    
+    <!-- FONTE BOTÃO !-->
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=New+Amsterdam&family=RocknRoll+One&display=swap" rel="stylesheet">
+    
+    <!-- FONTE RODAPÉ !-->
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&family=RocknRoll+One&display=swap" rel="stylesheet">
+    
+    <!-- Resto do programa !-->
+    
+    <meta charset="utf-8" />
+
+    <title> SHOPPING THE GAME 🛒 </title>
+    
+  </head>
+  <body>
+    <main>
+      <div class="passo ativo" id="passo-0">
+          <img src="Logo.png">
+          
+                   <p>
+                     
+                     Você está indo ao shopping Praça Nova para fazer suas comprinhas na vibe "As Branquelas", tente chegar se possível!!!
+                     
+                   </p>
+                   
+                   <button class = "proximo" data-proximo = "1"> Vai de busão </button>
+                   <button class = "proximo" data-proximo = "2"> Vai de carro </button>   
+                   
+        
+      </div>
+      
+      <!-- Botão 1 !-->
+      
+      <div class="passo" id="passo-1">
+        <img src="Logo.png">
+        <p> Você pega o busão</p>
+        <button class = "proximo" data-proximo ="3"> Vai cedo pegar o busão </button>
+        <button class = "proximo" data-proximo ="4"> Você sai atrasado </button>
+        </div>
+      
+       <!-- Botão 2 !-->
+      
+      <div class="passo" id="passo-2">
+        <img src="Logo.png">
+        <p> Você chega no primeiro farol </p>
+        <button class = "proximo" data-proximo ="5"> Atravessa no verde </button>
+        <button class = "proximo" data-proximo ="6"> Atravessa no vermelho </button>
+        </div>
+      
+       <!-- Botão 5 !-->
+      
+      <div class="passo" id="passo-5">
+        <img src="Logo.png">
+        <p> Tem um congestionamento... você...</p>
+        <button class = "proximo" data-proximo ="7"> Você pega um atalho SEGURO </button>
+        <button class = "proximo" data-proximo ="8"> Deseja retornar para casa e pegar busão </button>
+        </div>
+      
+       <!-- Botão 6 !-->
+      
+      <div class="passo" id="passo-6">
+        <img src="Logo.png">
+        <p> Você foi atropelado, parabéns </p>
+        <button class = "proximo" data-proximo ="0"> Reinicia agr seu BOSTA </button>
+        </div>        
+      
+       <!-- Botão 7 !-->
+      
+      <div class="passo" id="passo-7">
+        <img src="Logo.png">
+        <p> Você chegou na hora desejada, parabéns seu animal </p>
+        <button class = "proximo" data-proximo ="0"> Reinicia agr colega </button>
+        </div>
+
+       <!-- Botão 8 !-->
+      
+      <div class="passo" id="passo-8">
+        <img src="Logo.png">
+        <p> Você pega o busão </p>
+        <button class = "proximo" data-proximo ="3"> Vai cedo pegar o busão </button>
+        <button class = "proximo" data-proximo ="4"> Você sai atrasado </button>
+        </div>
+      
+       <!-- Botão 3 !-->
+      
+      <div class="passo" id="passo-3">
+        <img src="Logo.png">
+        <p> O busão ta chegando </p>
+        <button class = "proximo" data-proximo ="9"> Você dá o sinal pro busão </button>
+        <button class = "proximo" data-proximo ="10"> Você sente vergonha e não faz nada </button>
+        </div>
+      
+       <!-- Botão 4 !-->
+      
+      <div class="passo" id="passo-4">
+        <img src="Logo.png">
+        <p> O shopping fechou, seu filho de uma puta! </p>
+        <button class = "proximo" data-proximo ="0"> Reiniciar </button>
+        </div>
+      
+       <!-- Botão 9 !-->
+      
+      <div class="passo" id="passo-9">
+        <img src="Logo.png">
+        <p> Parabéns, chegou no shopping </p>
+        <button class = "proximo" data-proximo ="0"> Reicinia ai meu mano </button>
+        </div>
+      
+       <!-- Botão 10 !-->
+      
+      <div class="passo" id="passo-10">
+        <img src="Logo.png">
+        <p> Você não foi ao shopping... nem sei o que dizer sobre você </p>
+        <button class = "proximo" data-proximo ="0"> Reiniciar? </button>
+        </div>
+      
+    </main>
+    
+    <footer>
+        <p> Jogo Desenvolvido por: <a href="https://github.com/tarcesio137" target="_blank" class="nome_link"> Tarcesio.137 </a> </p>
+    </footer>
+    
+    <script src="sketch.js"></script>
+  </body>
+</html>
